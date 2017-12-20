@@ -1,0 +1,14 @@
+security:
+  user:
+    name: user
+    password: pwd
+  oauth2:
+    resource:
+      user-info-uri: "/api/me"
+      filter-order: 3
+#    client:
+#      client-id: client
+#      client-secret: secret
+#      scope: read,write
+#      authorized-grant-types: authorization_code,password
+
