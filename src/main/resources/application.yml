@@ -4,11 +4,14 @@ security:
     password: pwd
   oauth2:
     resource:
-      user-info-uri: "/api/me"
+      user-info-uri: "/api/oauth/me"
       filter-order: 3
-#    client:
-#      client-id: client
-#      client-secret: secret
-#      scope: read,write
-#      authorized-grant-types: authorization_code,password
+level:
+  org.springframework.security: DEBUG
+#server:
+#  context-path: /oauthServer
+server:
+  session:
+    cookie:
+      name: OAUTH_APPLICATION_SESSION
 

@@ -9,14 +9,12 @@ import java.security.Principal;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * OAuth2 api
+ */
 @Controller
-@RequestMapping("/")
-public class MyController {
-
-    @RequestMapping(method = RequestMethod.GET)
-    public String index(){
-        return "index";
-    }
+@RequestMapping("/oauth2/api")
+public class OAuth2Controller {
 
     @ResponseBody
     @RequestMapping(value = "/me")

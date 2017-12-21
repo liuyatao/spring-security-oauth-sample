@@ -8,6 +8,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+/**
+ * Spring Security Configuration for this App
+ */
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
@@ -20,15 +23,21 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.debug(true);
+        super.configure(web);
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        //init two uses with different authorities
         auth.inMemoryAuthentication().withUser("lyt").password("lyt").authorities("ROLE_USER")
                 .and().withUser("admin").password("admin").authorities("ROLE_ADMIN");
     }
 
+    /**
+     * Expose AuthenticationManager for other place to use
+     * @return
+     * @throws Exception
+     */
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
