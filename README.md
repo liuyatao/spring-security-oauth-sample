@@ -7,7 +7,7 @@
 
 ## OAuth 2.0的四个角色
 
-为了方便理解，以常用的`使用微信登录`为例
+为了方便理解，以常用的`使用微信登录`为例
 
 * **Resource Owner**
 
@@ -19,7 +19,7 @@
     
 * **Client Application**
 
-    第三方客户端，对比微信中就是各种微信公众号开发的应用，第三方应用经过`认证服务器`授权后即可访问`资源服务器`的REST API来获取用户的头像、性别、地区等基本信息。
+    第三方客户端，对比微信中就是各种微信公众号开发的应用，第三方应用经过`认证服务器`授权后即可访问`资源服务器`的REST API来获取用户的头像、性别、地区等基本信息。
 
 * **Authorization Server**
 
@@ -145,21 +145,21 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
 * 客户端信息
 
-![输入图片说明](https://static.oschina.net/uploads/img/201801/12094230_E1lr.png "在这里输入图片标题")
+![输入图片说明](https://user-gold-cdn.xitu.io/2018/1/30/16145916dcaf9116?w=1222&h=1148&f=png&s=110518 "在这里输入图片标题")
 
 * 授权
 
-![输入图片说明](https://static.oschina.net/uploads/img/201801/12094247_IZtK.png "在这里输入图片标题")
+![输入图片说明](https://user-gold-cdn.xitu.io/2018/1/30/16145916e510f382?w=1600&h=1200&f=png&s=95458 "在这里输入图片标题")
 
 * 获取的token
 
-![输入图片说明](https://static.oschina.net/uploads/img/201801/12094302_PCXH.png "在这里输入图片标题")
+![输入图片说明](https://user-gold-cdn.xitu.io/2018/1/30/16145916dcd954aa?w=1584&h=802&f=png&s=71546 "在这里输入图片标题")
 
 
 
 * 访问资源服务器API
 
-![输入图片说明](https://static.oschina.net/uploads/img/201801/12094433_gqlL.png "在这里输入图片标题")
+![输入图片说明](https://user-gold-cdn.xitu.io/2018/1/30/16145916dc8c4347?w=2456&h=1424&f=png&s=308109 "在这里输入图片标题")
 
 
 
@@ -168,4 +168,4 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
 测试代码[github地址](https://github.com/liuyatao/spring-security-oauth-sample)。有兴趣可以关注微信公众账号获取最新推送文章。
 
-![输入图片说明](https://static.oschina.net/uploads/img/201801/12094209_OagN.jpg "在这里输入图片标题")
+![输入图片说明](https://user-gold-cdn.xitu.io/2018/1/30/16145916dced2b4e?w=258&h=258&f=jpeg&s=26875 "在这里输入图片标题")
