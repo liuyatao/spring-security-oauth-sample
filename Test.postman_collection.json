@@ -1,0 +1,53 @@
+{
+	"info": {
+		"name": "Test",
+		"_postman_id": "f04cffef-f163-74c7-a6d7-7171f35fda92",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/oauth2/api/me",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "652a553d-9645-44cf-8f46-9a547957acd4",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/oauth2/api/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth2",
+						"api",
+						"me"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
