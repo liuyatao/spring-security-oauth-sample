@@ -14,4 +14,11 @@ server:
   session:
     cookie:
       name: OAUTH_APPLICATION_SESSION
+  port: 8443
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-alias: UAA
+    key-store: keystore.p12
+    key-store-password: UAA@uaa
 
